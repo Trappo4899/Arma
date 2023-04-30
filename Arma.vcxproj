@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f3e3dbcb-f6bd-4056-b593-926c655c47b8}</ProjectGuid>
+    <RootNamespace>Arma</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="actionmap.cpp" />
+    <ClCompile Include="address.cpp" />
+    <ClCompile Include="aimbot.cpp" />
+    <ClCompile Include="ammo_type.cpp" />
+    <ClCompile Include="arma string.cpp" />
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="callbacks.cpp" />
+    <ClCompile Include="camera angles.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="checkbox.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="colourpicker.cpp" />
+    <ClCompile Include="communication.cpp" />
+    <ClCompile Include="configbox.cpp" />
+    <ClCompile Include="dlc manager.cpp" />
+    <ClCompile Include="dropdown.cpp" />
+    <ClCompile Include="dx11engine.cpp" />
+    <ClCompile Include="element.cpp" />
+    <ClCompile Include="entities.cpp" />
+    <ClCompile Include="entity type.cpp" />
+    <ClCompile Include="entitylist.cpp" />
+    <ClCompile Include="group.cpp" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="imgui_demo.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui_tables.cpp" />
+    <ClCompile Include="imgui_widgets.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="keybind.cpp" />
+    <ClCompile Include="landscape.cpp" />
+    <ClCompile Include="magazine.cpp" />
+    <ClCompile Include="magazine_type.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="math.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="moveinfo.cpp" />
+    <ClCompile Include="movestype.cpp" />
+    <ClCompile Include="multidropdown.cpp" />
+    <ClCompile Include="muzzle_state.cpp" />
+    <ClCompile Include="muzzle_type.cpp" />
+    <ClCompile Include="network manager.cpp" />
+    <ClCompile Include="process.cpp" />
+    <ClCompile Include="realplayer.cpp" />
+    <ClCompile Include="render.cpp" />
+    <ClCompile Include="rendering.cpp" />
+    <ClCompile Include="selectionbox.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="slider.cpp" />
+    <ClCompile Include="tab.cpp" />
+    <ClCompile Include="text.cpp" />
+    <ClCompile Include="textbox.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="visual state.cpp" />
+    <ClCompile Include="visuals.cpp" />
+    <ClCompile Include="weapon.cpp" />
+    <ClCompile Include="weapon_mode.cpp" />
+    <ClCompile Include="weapon_type.cpp" />
+    <ClCompile Include="world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="actionmap.h" />
+    <ClInclude Include="address.h" />
+    <ClInclude Include="aimbot.h" />
+    <ClInclude Include="ammo_type.h" />
+    <ClInclude Include="arma string.h" />
+    <ClInclude Include="base class.h" />
+    <ClInclude Include="button.h" />
+    <ClInclude Include="callbacks.h" />
+    <ClInclude Include="camera angles.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="checkbox.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="colourpicker.h" />
+    <ClInclude Include="communication.h" />
+    <ClInclude Include="configbox.h" />
+    <ClInclude Include="dlc manager.h" />
+    <ClInclude Include="dropdown.h" />
+    <ClInclude Include="dx11engine.h" />
+    <ClInclude Include="element.h" />
+    <ClInclude Include="entities.h" />
+    <ClInclude Include="entity type.h" />
+    <ClInclude Include="entitylist.h" />
+    <ClInclude Include="group.h" />
+    <ClInclude Include="imconfig.h" />
+    <ClInclude Include="imgui.h" />
+    <ClInclude Include="imgui_impl_dx11.h" />
+    <ClInclude Include="imgui_impl_win32.h" />
+    <ClInclude Include="imgui_internal.h" />
+    <ClInclude Include="imstb_rectpack.h" />
+    <ClInclude Include="imstb_textedit.h" />
+    <ClInclude Include="imstb_truetype.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="keybind.h" />
+    <ClInclude Include="landscape.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="magazine.h" />
+    <ClInclude Include="magazine_type.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="moveinfo.h" />
+    <ClInclude Include="movestype.h" />
+    <ClInclude Include="multidropdown.h" />
+    <ClInclude Include="muzzle_state.h" />
+    <ClInclude Include="muzzle_type.h" />
+    <ClInclude Include="network manager.h" />
+    <ClInclude Include="process.h" />
+    <ClInclude Include="raw data.h" />
+    <ClInclude Include="realplayer.h" />
+    <ClInclude Include="render.h" />
+    <ClInclude Include="rendering.h" />
+    <ClInclude Include="reversals.h" />
+    <ClInclude Include="selectionbox.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="slider.h" />
+    <ClInclude Include="tab.h" />
+    <ClInclude Include="text.h" />
+    <ClInclude Include="textbox.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="visual state.h" />
+    <ClInclude Include="visuals.h" />
+    <ClInclude Include="weapon.h" />
+    <ClInclude Include="weapon_mode.h" />
+    <ClInclude Include="weapon_type.h" />
+    <ClInclude Include="world.h" />
+    <ClInclude Include="xorstring.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+  </Target>
+</Project>
