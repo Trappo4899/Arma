@@ -36,8 +36,6 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 
 		g_pInput->update();
 
-		g_pRender->foreground.normal_text("Yekcan Mavi", 15, 15, ImColor(255, 255, 255, 255), FONT_OUTLINED);
-
 		if (g_pClient->m_parent.GetAddress().as<UINT_PTR>())
 		{
 			g_pClient->m_camera = g_pClient->m_world.GetCamera();
